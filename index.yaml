@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-14T13:19:07.509769424-07:00"
+    created: "2020-03-21T19:53:02.256057749Z"
     description: Git with a cup of tea
-    digest: b829dc67b9288111ad7b780f9794be5c08a3f0d23926116b8b7dbd70347806bf
+    digest: 8fa67d2812f13c7c4c1034e05f9d390782250e35cb02d8ebd05d66811e1ee911
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -22,6 +22,6 @@ entries:
     - https://github.com/go-gitea/gitea
     - https://hub.docker.com/r/gitea/gitea/
     urls:
-    - https://github.com/r1cebank/helm-charts/releases/download/gitea-1.9.3/gitea-1.9.3.tgz
+    - gitea-1.9.3.tgz
     version: 1.9.3
-generated: "2020-03-14T13:19:07.111092908-07:00"
+generated: "2020-03-21T19:53:02.254392749Z"
