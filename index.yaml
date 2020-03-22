@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-22T01:18:17.846183073Z"
+    created: "2020-03-22T01:37:42.352831443Z"
     description: Git with a cup of tea
-    digest: c54cae174cd7939369946ae075f1fdf5017a1a91560171bb8724f72facb35923
+    digest: f45fe201e1c0343e97f64c2a794e123e5883dfea3dd990e4525c96dd5996d734
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -24,4 +24,4 @@ entries:
     urls:
     - gitea-1.9.3.tgz
     version: 1.9.3
-generated: "2020-03-22T01:18:17.844461271Z"
+generated: "2020-03-22T01:37:42.319386343Z"
