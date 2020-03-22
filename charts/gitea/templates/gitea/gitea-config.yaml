@@ -16,8 +16,8 @@ data:
     ; see https://docs.gitea.io/en-us/config-cheat-sheet/ for additional documentation.
 
     ; App name that shows in every page title
-    {{- if .Values.app.name }}
-    APP_NAME = {{ .Values.app.name }}
+    {{- if .Values.app.title }}
+    APP_NAME = {{ .Values.app.title }}
     {{- else }}
     APP_NAME = Gitea: Git with a cup of tea
     {{- end -}}
@@ -101,8 +101,10 @@ data:
     ; Set the default theme for the Gitea install
     {{- if .Values.app.theme }}
     DEFAULT_THEME = {{ .Values.app.theme }}
+
     {{- else }}
     DEFAULT_THEME = gitea
+
     {{- end -}}
 
     [ui.admin]

@@ -137,7 +137,7 @@ The following table lists the configurable parameters of this chart and their de
 
 | Parameter                  | Description                                     | Default                                                    |
 | -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
-| `app.name`                         | Application Name                  |  Gitea: Git with a cup of tea                                      |
+| `app.title`                         | Application Title                  |  Gitea: Git with a cup of tea                                      |
 | `app.theme`                         | Application Theme                  |  gitea                                      |
 | `images.gitea`                    | `gitea` image                     | `gitea/gitea:1.6.1`                                                 |
 | `images.postgres`                 | `postgres` image                            | `postgres:9.6`                                                    |
