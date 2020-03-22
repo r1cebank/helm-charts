@@ -80,6 +80,12 @@ data:
     WORK_IN_PROGRESS_PREFIXES=WIP:,[WIP]
 
     [ui]
+    ; Set the default theme for the Gitea install
+    {{- if .Values.app.theme }}
+    DEFAULT_THEME = {{ .Values.app.theme }}
+    {{- else }}
+    DEFAULT_THEME = gitea
+    {{- end -}}
     ; Number of repositories that are displayed on one explore page
     EXPLORE_PAGING_NUM = 20
     ; Number of issues that are displayed on one page
@@ -98,14 +104,7 @@ data:
     MAX_DISPLAY_FILE_SIZE = 8388608
     ; Whether the email of the user should be shown in the Explore Users page
     SHOW_USER_EMAIL = true
-    ; Set the default theme for the Gitea install
-    {{- if .Values.app.theme }}
-    DEFAULT_THEME = {{ .Values.app.theme }}
 
-    {{- else }}
-    DEFAULT_THEME = gitea
-
-    {{- end -}}
 
     [ui.admin]
     ; Number of users that are displayed on one page
