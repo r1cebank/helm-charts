@@ -16,7 +16,11 @@ data:
     ; see https://docs.gitea.io/en-us/config-cheat-sheet/ for additional documentation.
 
     ; App name that shows in every page title
+    {{- if .Values.app.name }}
+    APP_NAME = {{ .Values.app.name }}
+    {{- else }}
     APP_NAME = Gitea: Git with a cup of tea
+    {{- end -}}
     ; Change it if you run locally
     RUN_USER = git
     ; Either "dev", "prod" or "test", default is "dev"
@@ -95,8 +99,11 @@ data:
     ; Whether the email of the user should be shown in the Explore Users page
     SHOW_USER_EMAIL = true
     ; Set the default theme for the Gitea install
+    {{- if .Values.app.theme }}
+    DEFAULT_THEME = {{ .Values.app.theme }}
+    {{- else }}
     DEFAULT_THEME = gitea
-
+    {{- end -}}
 
     [ui.admin]
     ; Number of users that are displayed on one page
