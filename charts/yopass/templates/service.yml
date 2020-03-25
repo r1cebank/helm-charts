@@ -12,7 +12,7 @@ metadata:
 {{- end }}
 {{- with .Values.service.annotations }}
   annotations:
-{{ toYamjl . | indent 4 }}
+{{ toYaml . | indent 4 }}
 {{- end }}
 spec:
 {{- if (or (eq .Values.service.type "ClusterIP") (empty .Values.service.type)) }}
