@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-22T01:48:06.805585489Z"
+    created: "2020-03-25T21:07:05.293185739Z"
     description: Git with a cup of tea
-    digest: 7d700903ebb02f7269c8034e2d29d126822a9b3ea6542343730b0161c7fb1975
+    digest: 9ac0ccfe4e6baa9f9bb849902a90816e11b28b3c0a70c0dde46d03dc4cc00ea9
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -24,4 +24,16 @@ entries:
     urls:
     - gitea-1.9.3.tgz
     version: 1.9.3
-generated: "2020-03-22T01:48:06.803732801Z"
+  yopass:
+  - apiVersion: v1
+    created: "2020-03-25T21:07:05.293605234Z"
+    digest: a05273d7d707870f1b552451095c172b30901b6a36fbba2729941a16d97ec5a7
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: jason@barefootcoders.com
+      name: Jason Berlinsky
+    name: yopass
+    urls:
+    - yopass-1.0.0.tgz
+    version: 1.0.0
+generated: "2020-03-25T21:07:05.291126662Z"
