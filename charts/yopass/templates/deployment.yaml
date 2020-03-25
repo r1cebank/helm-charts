@@ -1,44 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ template "yopass.fullname" . }}
+  app: {{ template "fullname" . }}
   labels:
-    app: {{ template "yopass.name" . }}
-    chart: {{ template "yopass.chart" . }}
-    release: {{ .Release.Name }}
-    heritage: {{ .Release.Service }}
-{{- with .Values.annotations }}
-  annotations:
-{{ toYaml . | indent 4 }}
-{{- end }}
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
 spec:
-  replicas: {{ .Values.replicas }}
+  replicas: 1
   selector:
     matchLabels:
-      app: {{ template "yopass.name" . }}
-      release: {{ .Release.Name }}
-  strategy:
-    type: {{ .Values.deploymentStrategy }}
-  {{- if ne .Values.deploymentStrategy "RollingUpdate" }}
-    rollingUpdate: null
-  {{- end }}
+      app: {{ template "fullname" . }}
   template:
     metadata:
       labels:
-        app: {{ template "yopass.name" . }}
-        release: {{ .Release.Name }}
-{{- with .Values.podAnnotations }}
-      annotations:
-{{ toYaml . | indent 8 }}
-{{- end }}
+        app: {{ template "fullname" . }}
     spec:
       containers:
-      - name: {{ .Chart.Name }}
+      - name: {{ template "fullname" . }}
         image: "{{ .Values.image.repo }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         args:
           - "--memcached=localhost:11211"
-      - name: {{ template "yopass.name" . }}-sc-memcached
+      - name: {{ template "fullname" . }}-memcached
         image: "{{ .Values.image.memcached.repo }}:{{ .Values.image.memcached.tag }}"
         args:
           - "-m 64"
