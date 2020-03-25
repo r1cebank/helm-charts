@@ -25,7 +25,7 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ template "grafana.name" . }}
+        app: {{ template "yopass.name" . }}
         release: {{ .Release.Name }}
 {{- with .Values.podAnnotations }}
       annotations:
