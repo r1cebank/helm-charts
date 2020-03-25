@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-25T22:19:13.495952848Z"
+    created: "2020-03-25T22:22:04.654235935Z"
     description: Git with a cup of tea
-    digest: e0d09cbc8d6bf0a3063084ff22d1982f3cb32f1d3f7f915f71ec2b0a437b2505
+    digest: 7e54b5ef02ab4a5c3f7b94222ee3e41515c28b517eb8e151fe6576f24beeb0b1
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -27,9 +27,9 @@ entries:
   yopass:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-25T22:19:13.496540747Z"
+    created: "2020-03-25T22:22:04.655252535Z"
     description: Yopass
-    digest: 7cb6c87d8e39a437823ccd894cf271e19fd151774dbfe03a79fdd5e8db19a18b
+    digest: 8ce98cc46c65b8b9255d0b7b73def151e8f982ac0cbe8a9fcc64c62742c79e26
     maintainers:
     - email: siyuangao@gmail.com
       name: Siyuan Gao
@@ -37,4 +37,4 @@ entries:
     urls:
     - yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2020-03-25T22:19:13.493241153Z"
+generated: "2020-03-25T22:22:04.59143831Z"
