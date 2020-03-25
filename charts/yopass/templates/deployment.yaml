@@ -37,7 +37,7 @@ spec:
         image: "{{ .Values.image.repo }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         args:
-          - "-memcached=localhost:11211"
+          - "--memcached=localhost:11211"
       - name: {{ template "yopass.name" . }}-sc-memcached
         image: "{{ .Values.image.memcached.repo }}:{{ .Values.image.memcached.tag }}"
         args:
