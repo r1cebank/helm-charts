@@ -1,0 +1,7 @@
+name: yopass
+version: 1.0.0
+kubeVersion: "^1.8.0-0"
+maintainers:
+  - name: Jason Berlinsky
+    email: jason@barefootcoders.com
+engine: gotpl
