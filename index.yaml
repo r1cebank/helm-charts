@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-25T22:31:44.782587754Z"
+    created: "2020-05-23T20:29:15.575256307Z"
     description: Git with a cup of tea
-    digest: 9f23bc393c7dee0084588d179cccb4ce35b8156d7e8e3b552a77989774e9525d
+    digest: 04648f645d6ec9b0a93d1d4262a87c01902f5453dcb4476b9f2476fbf785eeda
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -24,12 +24,34 @@ entries:
     urls:
     - gitea-1.9.3.tgz
     version: 1.9.3
+  mosquitto:
+  - apiVersion: v1
+    appVersion: 1.6.8
+    created: "2020-05-23T20:29:15.576222709Z"
+    description: Eclipse Mosquitto - An open source MQTT broker
+    digest: b1a88e76e5cfd8ef12924356a1bb8238ae7cf9c4baf3a7abf09f14f4b7ad9d66
+    home: https://mosquitto.org/
+    icon: https://mosquitto.org/images/mosquitto-text-side-28.png
+    keywords:
+    - message queue
+    - MQTT
+    - mosquitto
+    - eclipse-iot
+    maintainers:
+    - email: siyuangao@gmail.com
+      name: Siyuan Gao
+    name: mosquitto
+    sources:
+    - https://github.com/eclipse/mosquitto
+    urls:
+    - mosquitto-0.1.0.tgz
+    version: 0.1.0
   yopass:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-03-25T22:31:44.78292216Z"
+    created: "2020-05-23T20:29:15.576469009Z"
     description: Yopass
-    digest: cc9706be2d5243c1a2a23da031a9921a37882a9628d97090aa1ce9726de94d75
+    digest: 100a9a008d5ef9d8a9343c8dd1b74c1adf67757a46f9b8b8434d2a291e933857
     maintainers:
     - email: siyuangao@gmail.com
       name: Siyuan Gao
@@ -37,4 +59,4 @@ entries:
     urls:
     - yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2020-03-25T22:31:44.734562487Z"
+generated: "2020-05-23T20:29:15.573309104Z"
