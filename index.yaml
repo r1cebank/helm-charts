@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-05-23T20:58:15.995589365Z"
+    created: "2020-06-02T16:21:22.615909109Z"
     description: Git with a cup of tea
-    digest: cf9f4024c605e37db5ad694e0c2a100729eb1185535467c2a7d30e9fa984a568
+    digest: 736539611714259d8143db0345b1378a7f359f552b444239fb76a16dd37601d3
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -27,9 +27,9 @@ entries:
   mosquitto:
   - apiVersion: v1
     appVersion: 1.6.8
-    created: "2020-05-23T20:58:15.996556969Z"
+    created: "2020-06-02T16:21:22.61687361Z"
     description: Eclipse Mosquitto - An open source MQTT broker
-    digest: 6d36403d712b1e157c26bb6865e51bbc78b083d250117c006b7d48e63a4e7eaa
+    digest: 2d1efaf67e633c7765679186cf50338d098fd4383888971bfbf0217affd0982f
     home: https://mosquitto.org/
     icon: https://mosquitto.org/images/mosquitto-text-side-28.png
     keywords:
@@ -46,12 +46,31 @@ entries:
     urls:
     - mosquitto-0.1.0.tgz
     version: 0.1.0
+  pihole:
+  - apiVersion: v1
+    appVersion: "5.0"
+    created: "2020-06-02T16:21:22.617621611Z"
+    description: Installs pihole in kubernetes
+    digest: 07c265f48d56c892503bca72c338fe37b550bec3b51dbe95a6a73c02297f9428
+    home: https://github.com/r1cebank/helm-charts/tree/master
+    icon: https://i2.wp.com/pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png
+    maintainers:
+    - email: siyuangao@gmail.com
+      name: Siyuan Gao
+    name: pihole
+    sources:
+    - https://pi-hole.net/
+    - https://github.com/pi-hole
+    - https://github.com/pi-hole/docker-pi-hole
+    urls:
+    - pihole-1.7.7.tgz
+    version: 1.7.7
   yopass:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-05-23T20:58:15.99680107Z"
+    created: "2020-06-02T16:21:22.617879111Z"
     description: Yopass
-    digest: f977896739434950c1c5b92d1593b65da3e56bb0c5e27c6d57bb1bf0ae79abef
+    digest: d4db30a1b2e031d1236141d5cb98466eb740baff0eb3d4ebd31af2b2cfc176f9
     maintainers:
     - email: siyuangao@gmail.com
       name: Siyuan Gao
@@ -59,4 +78,4 @@ entries:
     urls:
     - yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2020-05-23T20:58:15.977633887Z"
+generated: "2020-06-02T16:21:22.594239176Z"
