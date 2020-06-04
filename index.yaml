@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-06-02T16:37:05.806159865Z"
+    created: "2020-06-04T22:26:09.256126303Z"
     description: Git with a cup of tea
-    digest: d551857dba5bff5bcc6d8bfa58c41754cfbcabc829a0fa7fe031597eaf318875
+    digest: f1307303350f3a63b1d71ab08e6696c68c313d1e807dc3ea8a0f8af9f915eb2a
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -24,12 +24,29 @@ entries:
     urls:
     - gitea-1.9.3.tgz
     version: 1.9.3
+  guacamole:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2020-06-04T22:26:09.256674603Z"
+    description: Apache Guacamole is a clientless remote desktop gateway. It supports
+      standard protocols like VNC, RDP, and SSH.
+    digest: 37dd404f78bd4b7dd89b486dcba2269961e658039524e114bee7e0e05956f550
+    icon: http://guacamole.apache.org/images/guac-logo.png
+    maintainers:
+    - email: siyuangao@gmail.com
+      name: Siyuan Gao
+    name: guacamole
+    sources:
+    - http://guacamole.apache.org/
+    urls:
+    - guacamole-0.2.1.tgz
+    version: 0.2.1
   mosquitto:
   - apiVersion: v1
     appVersion: 1.6.8
-    created: "2020-06-02T16:37:05.807220481Z"
+    created: "2020-06-04T22:26:09.257489304Z"
     description: Eclipse Mosquitto - An open source MQTT broker
-    digest: 85f3dca433f5bffd21cef0ca38a48bc3e539fdb1c872920d535dbd2cea5022b2
+    digest: 8323c1e8a87ce44977d8bce403e097444a719437a82e6fe585711df94e3055b3
     home: https://mosquitto.org/
     icon: https://mosquitto.org/images/mosquitto-text-side-28.png
     keywords:
@@ -49,9 +66,9 @@ entries:
   pihole:
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-06-02T16:37:05.808150795Z"
+    created: "2020-06-04T22:26:09.258321005Z"
     description: Installs pihole in kubernetes
-    digest: 8210e6f4aea2822510d2e9625a2eb015e9561d4073e768b6c09b6d938aab70dc
+    digest: dd168aaf80f7a9dbdcaf5f93366dd09bc0257e489384d9fba95a437f8ac8d534
     home: https://github.com/r1cebank/helm-charts/tree/master
     icon: https://i2.wp.com/pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png
     maintainers:
@@ -68,9 +85,9 @@ entries:
   yopass:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-06-02T16:37:05.808412699Z"
+    created: "2020-06-04T22:26:09.258548705Z"
     description: Yopass
-    digest: 241c29bed712a0882dfccd2a3e356cd55d79fba724b9973a1626828f314da641
+    digest: 11693577e9245f370948b6343b75ddda49f2ddbcb9802a892ae68fdff228d9d9
     maintainers:
     - email: siyuangao@gmail.com
       name: Siyuan Gao
@@ -78,4 +95,4 @@ entries:
     urls:
     - yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2020-06-02T16:37:05.803966733Z"
+generated: "2020-06-04T22:26:09.254426001Z"
