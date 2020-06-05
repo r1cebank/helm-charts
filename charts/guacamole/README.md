@@ -1,67 +1,25 @@
-guacamole
-=========
+# Apache guacamole
 
-## TL;DR;
+A helm chart for apache guacamole. 
 
-```console
-$ helm repo add r1cebank https://r1cebank.github.io/helm-charts
-$ helm install guacamole halkeye/guacamole
+This helm chart provides a complete setup of:
+
+- Guacamole server
+- Guacd Proxy
+- MySQL server
+
+You can get it up ang running by:
+
+1. git clone https://github.com/prabhatsharma/apache-guacamole-helm-chart
+2. cd apache-guacamole-helm-chart
+3. helm install . -f values.yaml --name=guacamole --namespace=guacamole
+4. kubectl --namespace guacamole port-forward svc/guacamole 8080:80
+5. visit http://localhost:8080/guacamole in your browser. Default creds are guacadmin/guacadmin
+
+I have not been able to get it to work though for RDP. Have been getting the following error on guacamole server:
+
+```log
+03:11:09.440 [http-nio-8080-exec-4] ERROR o.a.g.w.GuacamoleWebSocketTunnelEndpoint - Creation of WebSocket tunnel to guacd failed: java.net.ConnectException: Connection refused (Connection refused)
+
+03:11:09.575 [http-nio-8080-exec-3] ERROR o.a.g.s.GuacamoleHTTPTunnelServlet - HTTP tunnel request failed: java.net.ConnectException: Connection refused (Connection refused)
 ```
-
-Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
-
-Current chart version is `0.2.1`
-
-
-
-## Changelog
-
-0.2.1 - helm-docs doesn't add a tl;dr section, so add it manually
-
-0.2.0 - Apparently I didn't actually use it before, i was running an old copy
-
-* Fixed services to expose the ports properly
-* Auto create the db on init if possible
-
-
-
-## Chart Values
-
-| Key | Type | Default | Description |
-|-----|------|---------|-------------|
-| affinity | object | `{}` |  |
-| dbcreation.image.pullPolicy | string | `"IfNotPresent"` |  |
-| dbcreation.image.repository | string | `"bitnami/postgresql"` |  |
-| dbcreation.image.tag | string | `"11.7.0-debian-10-r9"` |  |
-| fullnameOverride | string | `""` |  |
-| guacamole.image.pullPolicy | string | `"IfNotPresent"` |  |
-| guacamole.image.repository | string | `"guacamole/guacamole"` |  |
-| guacamole.image.tag | string | `"{{ .Chart.AppVersion }}"` |  |
-| guacd.image.pullPolicy | string | `"IfNotPresent"` |  |
-| guacd.image.repository | string | `"guacamole/guacd"` |  |
-| guacd.image.tag | string | `"{{ .Chart.AppVersion }}"` |  |
-| imagePullSecrets | list | `[]` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.hosts[0].host | string | `"chart-example.local"` |  |
-| ingress.hosts[0].paths | list | `[]` |  |
-| ingress.tls | list | `[]` |  |
-| nameOverride | string | `""` |  |
-| nodeSelector | object | `{}` |  |
-| podSecurityContext | object | `{}` |  |
-| postgres.database | string | `"guacamole"` |  |
-| postgres.hostname | string | `"postgresql"` |  |
-| postgres.password | string | `"password"` |  |
-| postgres.port | string | `"5432"` |  |
-| postgres.user | string | `"guacamole"` |  |
-| replicaCount | int | `1` |  |
-| resources | object | `{}` |  |
-| securityContext | object | `{}` |  |
-| service.port | int | `80` |  |
-| service.type | string | `"ClusterIP"` |  |
-| serviceAccount.create | bool | `true` |  |
-| serviceAccount.name | string | `nil` |  |
-| tolerations | list | `[]` |  |
-
-## Credits
-https://github.com/halkeye-helm-charts/guacamole
