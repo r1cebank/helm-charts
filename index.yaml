@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-06-05T04:36:02.412681056Z"
+    created: "2020-06-05T05:22:05.279929963Z"
     description: Git with a cup of tea
-    digest: 5cc93ec234e7f32ff2235fd26240db732d70319692b046be5f35b3a7171701ca
+    digest: 2df93ae1170165f64066f7917d80a3745315b78000faaab09e48b512b013b3ca
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -27,7 +27,7 @@ entries:
   guacamole:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2020-06-05T04:36:02.413240457Z"
+    created: "2020-06-05T05:22:05.295025823Z"
     description: Apache Guacamole is a clientless remote desktop gateway. It supports
       standard protocols like VNC, RDP, and SSH.
     digest: 48f1f60f29a9c25ade3de99f68184ee8845ac1de5130afc00d96ea07475a52ac
@@ -41,12 +41,26 @@ entries:
     urls:
     - guacamole-0.2.1.tgz
     version: 0.2.1
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2020-06-05T05:22:05.294208003Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.6.2
+    description: A Helm chart for guacamole
+    digest: 172c95cd00fff4d52956c58969596638770329cf56cbfe87608988fbb4cabefd
+    name: guacamole
+    urls:
+    - guacamole-0.2.0.tgz
+    version: 0.2.0
   mosquitto:
   - apiVersion: v1
     appVersion: 1.6.8
-    created: "2020-06-05T04:36:02.414502757Z"
+    created: "2020-06-05T05:22:05.295959845Z"
     description: Eclipse Mosquitto - An open source MQTT broker
-    digest: 9aca3a6fbac1979b66de8471531fea65bab64f9e39f6158fb2f8582afbdbff0a
+    digest: a1d9ce35134ead04e769e621e4dd5084006afc5fba51164966787df061ea847c
     home: https://mosquitto.org/
     icon: https://mosquitto.org/images/mosquitto-text-side-28.png
     keywords:
@@ -66,9 +80,9 @@ entries:
   pihole:
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-06-05T04:36:02.415246057Z"
+    created: "2020-06-05T05:22:05.296751664Z"
     description: Installs pihole in kubernetes
-    digest: 5fbd7853d60c03c7e171c57511196f7ad67eca36d32ede94ac2df9c713eb1c75
+    digest: 7bcb9b6a5eba385b29479da4abcad69d9143638a19d06446557816f41d32ac31
     home: https://github.com/r1cebank/helm-charts/tree/master
     icon: https://i2.wp.com/pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png
     maintainers:
@@ -85,9 +99,9 @@ entries:
   yopass:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-06-05T04:36:02.415452957Z"
+    created: "2020-06-05T05:22:05.297134273Z"
     description: Yopass
-    digest: 2a882c45292d4075afdb238824540b4c87cf8f93c23d80f5352b1d1b0f2a5572
+    digest: 81ebc9f39429da00f9f7834b0717a8b960113e96f0006cf789f2f73fafedc29d
     maintainers:
     - email: siyuangao@gmail.com
       name: Siyuan Gao
@@ -95,4 +109,4 @@ entries:
     urls:
     - yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2020-06-05T04:36:02.411175256Z"
+generated: "2020-06-05T05:22:05.278317625Z"
