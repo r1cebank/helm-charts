@@ -3,9 +3,9 @@ entries:
   gitea:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-06-05T16:39:12.423729712Z"
+    created: "2020-06-05T16:49:00.944363152Z"
     description: Git with a cup of tea
-    digest: 946ee9d22706e6b570087a28d27cd9f2aadb04a73d6a489fc65c8485ff27c462
+    digest: f31c99894f3c50e8262a577de48932ec563b504f194666eef4991d0211a657f7
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -27,7 +27,7 @@ entries:
   guacamole:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2020-06-05T16:39:12.437588618Z"
+    created: "2020-06-05T16:49:00.946160754Z"
     description: Apache Guacamole is a clientless remote desktop gateway. It supports
       standard protocols like VNC, RDP, and SSH.
     digest: 48f1f60f29a9c25ade3de99f68184ee8845ac1de5130afc00d96ea07475a52ac
@@ -41,23 +41,19 @@ entries:
     urls:
     - guacamole-0.2.1.tgz
     version: 0.2.1
-  - apiVersion: v1
+  - apiVersion: v2
     appVersion: 1.1.0
-    created: "2020-06-05T16:39:12.436785118Z"
-    dependencies:
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://kubernetes-charts.storage.googleapis.com/
-      version: 1.6.2
-    description: A Helm chart for guacamole
-    digest: 172c95cd00fff4d52956c58969596638770329cf56cbfe87608988fbb4cabefd
+    created: "2020-06-05T16:49:00.945401453Z"
+    description: A Helm chart for Kubernetes
+    digest: ff3991c25d9c890fdcd84f22818cbe84774cde7d50f19773130d3581f995efec
     name: guacamole
+    type: application
     urls:
     - guacamole-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2020-06-05T16:39:12.424188913Z"
+    created: "2020-06-05T16:49:00.944908753Z"
     description: A Helm chart for Kubernetes
     digest: aebf07713f5a3dc096f0cc431e539d07839279f8ccc16587e738ffd603bbb423
     name: guacamole
@@ -68,9 +64,9 @@ entries:
   mosquitto:
   - apiVersion: v1
     appVersion: 1.6.8
-    created: "2020-06-05T16:39:12.438627119Z"
+    created: "2020-06-05T16:49:00.947039656Z"
     description: Eclipse Mosquitto - An open source MQTT broker
-    digest: c5c6781ef0d652bf82703a855176f035f734cf0763c240412c7b6486af979aa9
+    digest: fc4f20a35b9efc7ab6385522f00d87a17f42ee1aa34beaba4bb31edabea280c9
     home: https://mosquitto.org/
     icon: https://mosquitto.org/images/mosquitto-text-side-28.png
     keywords:
@@ -90,9 +86,9 @@ entries:
   pihole:
   - apiVersion: v1
     appVersion: "5.0"
-    created: "2020-06-05T16:39:12.439791819Z"
+    created: "2020-06-05T16:49:00.947855857Z"
     description: Installs pihole in kubernetes
-    digest: 0f99f8aa8cb87dbe925bed878715e88a49f1df8030a7b6e520fbdbf9d9e6073d
+    digest: 0ead684f91eeefd8f39d92769877f7a6f8b12bbba9e95f67e1ceb76a378389e0
     home: https://github.com/r1cebank/helm-charts/tree/master
     icon: https://i2.wp.com/pi-hole.net/wp-content/uploads/2016/12/Vortex-R.png
     maintainers:
@@ -109,9 +105,9 @@ entries:
   yopass:
   - apiVersion: v1
     appVersion: 1.9.3
-    created: "2020-06-05T16:39:12.440161019Z"
+    created: "2020-06-05T16:49:00.948250258Z"
     description: Yopass
-    digest: 75958ccbc8fadbfb71e0986d7159bd8171062bd48235d5b72ac12b194051596c
+    digest: dc8626d203e7dc42ae8c9828a1fd099c16ec9bc31cf0c3574741f1e74b932eb2
     maintainers:
     - email: siyuangao@gmail.com
       name: Siyuan Gao
@@ -119,4 +115,4 @@ entries:
     urls:
     - yopass-1.0.0.tgz
     version: 1.0.0
-generated: "2020-06-05T16:39:12.421761012Z"
+generated: "2020-06-05T16:49:00.933076135Z"
